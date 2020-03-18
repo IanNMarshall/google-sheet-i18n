@@ -130,7 +130,7 @@ const generateTranslations = (sheets,
 }
 
 const getSheets = ({ worksheets }) => {
-  stdout.write('Fetching Rows from Google Sheets ')
+  stdout.write('Fetching Rows from Google Sheets!!! ')
   return new Promise((resolve, reject) => (
     Promise.all(worksheets.map(getSheetRows))
       .then(sheets => {
